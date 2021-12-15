@@ -1,0 +1,8 @@
+.carousel .slide .legend{
+    bottom: 0;
+    opacity: 0.75;
+}
+
+.carousel .slider-wrapper.axis-horizontal .slider{
+    gap: 10px;
+}
