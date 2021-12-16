@@ -20,7 +20,7 @@ function ThirdPage(){
     var attend
     var guestData;
     guests.forEach((guest) => {
-        if(window.location.href.indexOf(guest.url) === 22){
+        if(window.location.href.indexOf(guest.url) > -1){
             attend = (guest.attend);
             guestData = guest;
         }
