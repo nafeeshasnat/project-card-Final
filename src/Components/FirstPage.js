@@ -18,7 +18,8 @@ function FirstPage(props){
             </div>
             <div className={classes.details}>
                 <div className={classes.salam}>
-                    <h2>ٱلسَّلَامُ عَلَيْكُمْ<span> - - </span>As-Salamu Alaykum</h2>
+                    <h2>ٱلسَّلَامُ عَلَيْكُمْ </h2>
+                    <h2>( As-Salamu Alaykum )</h2>
                 </div>
                 <h3 className={classes['guest-name']}>{name}</h3>
                 <h4>You are cordially invited with family on the joyful occasion of the marriage of</h4>

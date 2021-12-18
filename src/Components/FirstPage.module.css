@@ -14,17 +14,20 @@
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
     font-weight: normal;
-    text-shadow: 0px 7px 9px #9ACCED;
 }
 
 .first-page .details .salam{
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .first-page .details .salam h2{
     margin: 0;
-    
+}
+
+.first-page .details .salam h2:first-child{
+    margin-bottom: 10px;
 }
 
 .first-page .details .guest-name{
@@ -82,6 +85,11 @@
     color: #fff;
 }
 
+@media screen and (max-width: 1500px) and (min-width: 1100px){
+    .first-page{
+        transform: scale(0.9);
+    }
+}
 
 @media screen and (max-height: 850px) {
     .first-page .arabic-div{

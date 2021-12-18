@@ -1,8 +1,31 @@
-.carousel .slide .legend{
-    bottom: 0;
-    opacity: 0.75;
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+.alice-carousel__stage-item *{
+    width: 205px;
+    padding: 0 10px;
 }
 
-.carousel .slider-wrapper.axis-horizontal .slider{
-    gap: 10px;
+.alice-carousel__dots{
+    margin: 10px 3px 5px;
+}
+
+.alice-carousel__prev-btn, 
+.alice-carousel__next-btn{
+    display: none;
+}
+
+.item {
+    position: relative;
+}
+
+.item p{
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    bottom: -15px;
+    background: rgba(0,0,0,0.6);
+    width: 70%;
+    right: 10%;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 25px;
 }

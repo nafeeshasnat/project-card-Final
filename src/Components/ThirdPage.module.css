@@ -1,11 +1,13 @@
 .vanue{
     color: #fff;
     width: 100%;
+    margin-top: -50px;
 }
 
 .vanue .map{
     width: 80%;
     display: flex;
+    flex-direction: column;
     margin: 0 10%;
     border-radius: 10px;
     align-items: center;
@@ -14,126 +16,85 @@
 .vanue .map iframe{
     width: 100%;
     height: 300px;
+    border-radius: 15px;
 }
 
-.vanue .join .buttons{
-    display: flex;
-    justify-content: space-evenly;
-}
 
-.vanue .join button {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    vertical-align: middle;
-    text-decoration: none;
-    font-size: inherit;
-    font-family: inherit;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 1.25em 2em;
-    background: #fff0f0;
-    border: 2px solid #b18597;
-    border-radius: 0.75em;
-    transform-style: preserve-3d;
-    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
-}
 
-.vanue .join button::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #f9c4d2;
-    border-radius: inherit;
-    box-shadow: 0 0 0 2px #b18597, 0 0.625em 9px 0 #ffe3e2;
-    transform: translate3d(0, 0.75em, -1em);
-    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
-}
-
-.vanue .join button:hover {
-    background: #ffe9e9;
-    transform: translate(0, 0.25em);
-}
-.vanue .join button:hover::before {
-    box-shadow: 0 0 0 2px #b18597, 0 0.5em 9px 0 #ffe3e2;
-    transform: translate3d(0, 0.5em, -1em);
-}
-.vanue .join button:active {
-    background: #ffe9e9;
-    transform: translate(0em, 0.75em);
-}
-.vanue .join button:active::before {
-    box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
-    transform: translate3d(0, 0, -1em);
-  }
-
-.vanue .time-polapan{
-    margin: 50px 10% 0 10%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.vanue .time-polapan .time{
+.vanue .map h4{
     font-family: 'Dancing Script', cursive;
-    text-transform: uppercase;
-    color: #e7cfab;
-    position: relative;
-    max-width: 450px;
-}
-
-.vanue .time-polapan .time h2{
-    font-size: 32px;
-    margin: 0;
-    font-weight: 400;
-}
-
-.vanue .time-polapan .time p{
-    font-size: 62px;
-    margin: 0;
-    font-weight: bold;
-    color: #d78f23;
-}
-
-.vanue .time-polapan .time h3{
-    font-size: 32px;
-    margin: 0;
-    font-weight: 400;
-}
-
-.vanue .time-polapan .time h4{
     border-top:1px dashed #e7cfab;
     margin-top: 10px;
     padding-top: 10px;
     color: #d78f23;
     font-size: 18px;
     font-weight: 500;
+    width: 100%;
 }
 
-.vanue .time-polapan .time h3:first-of-type{
+.vanue .time-polapan{
+    margin: 20px 10% 0 10%;
+    max-width: 100%;
+    letter-spacing: 0.15em;
+    position: relative;
+}
+
+.vanue .time{
+    font-family: 'Dancing Script', cursive;
+    text-transform: uppercase;
+    color: #e7cfab;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.vanue .time h2{
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: 400;
+}
+
+.vanue .time p{
+    font-size: 8em;
+    margin: 0;
+    font-weight: bold;
+    color: #d78f23;
+}
+
+.vanue .time h3{
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: 400;
+}
+
+.vanue .time h3:first-of-type{
     position: absolute;
-    left: 0;
+    left: 15%;
     top: 50%;
-    transform: translate(0%, -90%);
+    transform: translate(0%, -50%);
     border-top: 1px solid #e7cfab;
     border-bottom: 1px solid #e7cfab;
 }
 
-.vanue .time-polapan .time h3:last-of-type{
+.vanue .time h3:last-of-type{
     position: absolute;
-    right: 11%;
+    right: 17%;
     top: 50%;
-    transform: translate(0%, -90%);
+    transform: translate(0%, -50%);
     border-top: 1px solid #e7cfab;
     border-bottom: 1px solid #e7cfab;
 }
 
-.vanue .slider{
-    max-width: 550px;
+@media screen and (max-width:1500px) {
+    .vanue .time p{
+        font-size: 5em;
+    }
+
+    .vanue .time h2,
+    .vanue .time h3{
+        font-size: 2em;
+    }
+
+    .vanue .map iframe{
+        height: 250px;
+    }
 }
