@@ -26,10 +26,13 @@ function Card (props){
             setActive('thirdPage');
         }
     }
-    console.log(props.guestFound)
+
+    if(active === 'thirdPage'){
+
+    }
     
     return(
-        <div className={classes.card}>
+        <div className={`${classes.card} ${active === 'thirdPage' && classes.third}`}>
             {active === 'firstPage' && props.guestFound === 1 && <FirstPage guests = {props}/>}
             {active === 'secondPage' && <SecondPage />}
             {active === 'thirdPage' && <ThirdPage/>}

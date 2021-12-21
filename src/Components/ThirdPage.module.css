@@ -98,3 +98,27 @@
         height: 250px;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .vanue .time h3:first-of-type{
+        left: 5%;
+    }
+
+    .vanue .time h3:last-of-type{
+        right: 7%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .vanue .time h3{
+        position: unset!important;
+    }
+
+    .vanue .time h3:first-of-type{
+        margin-top: 35px;
+    }
+
+    .vanue .time h3:last-of-type{
+        margin-top: 20px;
+    }
+}
