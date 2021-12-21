@@ -99,6 +99,12 @@
     }
 }
 
+@media screen and (max-width: 1400px) and (min-width:1050px){
+    .vanue{
+        transform: scale(0.9);
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .vanue .time h3:first-of-type{
         left: 5%;
@@ -109,7 +115,7 @@
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
     .vanue .time h3{
         position: unset!important;
     }

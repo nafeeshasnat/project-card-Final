@@ -123,3 +123,9 @@
         flex-direction: column;
     }
 }
+
+@media screen and (max-width: 1400px) and (min-width:1050px){
+    .info{
+        transform: scale(0.9);
+    }
+}
