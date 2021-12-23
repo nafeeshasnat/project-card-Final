@@ -3,9 +3,8 @@ import { useState , useEffect } from 'react';
 import Slider from './Slider';
 import { db } from '../config';
 import { collection, getDocs, updateDoc, doc } from 'firebase/firestore';
-import Realistic from './Confetti';
 
-function FourthPage(){
+function FourthPage(props){
     
     const [guests, setGuest] = useState([]);
     const [isActive, setActive] = useState("false");
@@ -53,17 +52,13 @@ function FourthPage(){
             console.log('You have already confirmed as not attending');
         }
         console.log(attend);
-        document.getElementById('modal').classList.toggle(classes.deactive);
-        document.getElementById('modal').classList.toggle(classes.active);
+        document.getElementById('modal').classList.toggle(props.classProps.deactiveClass);
+        document.getElementById('modal').classList.toggle(props.classProps.activeClass);
         document.getElementById('modal-title').innerHTML = modalText;
         setActive(isActive);
     }
 
-    const closeModal = () => {
-        document.getElementById('modal').classList.toggle(classes.active);
-        document.getElementById('modal').classList.toggle(classes.deactive);
-    }
-
+    console.log(props.classProps.deactiveClass)
 
     return(
         <div className={classes.fourth}>
@@ -81,14 +76,6 @@ function FourthPage(){
                     </div>
                 </div>
             </div>
-            <div className = {`${classes['modal-container']} ${classes.deactive}`} id="modal">
-                <div className={classes.modal}>
-                    <h1 className={classes['modal__title']} id="modal-title"></h1>
-                    <button className={classes['modal__btn']} onClick={() => {closeModal()}}>Okay &rarr;</button>
-                </div>
-                <div className={classes.overlay}></div>
-            </div>
-            <Realistic/>
         </div>
     )
 }

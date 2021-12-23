@@ -9,6 +9,7 @@ import bottomRightFlower from '../Images/bottom-right-flower.svg';
 import bottomLeftFlower from '../Images/bottom-left.svg'; 
 import { db } from '../config';
 import { collection, getDocs } from 'firebase/firestore';
+import Realistic from './Confetti';
 
 // const peoples = [
 //     {
@@ -50,6 +51,11 @@ function BackgroundBlue(){
         }
     });
 
+    const closeModal = () => {
+        document.getElementById('modal').classList.toggle(classes.active);
+        document.getElementById('modal').classList.toggle(classes.deactive);
+    }
+
     return(
         <div className={classes.background}>
             <img src={topLeftUnderFlower} className={`${classes['top-left-under-flower']} ${classes['under-flower']}`} alt="topLeftUnderFlower"></img>
@@ -58,7 +64,15 @@ function BackgroundBlue(){
             <img src={bottomRightFlower} className={`${classes['bottom-right-flower']} ${classes['under-flower']}`} alt="bottom-right-flower"></img>
             <img src={bottomLeftFlower} className={`${classes['bottom-left']} ${classes['under-flower']}`} alt="bottom-left"></img>
             <FireworksBackground/>
-            <Card guestFound={found} guestName = {name} guestConfirm = {attend}/>
+            <Realistic/>
+            <Card guestFound={found} guestName = {name} guestConfirm = {attend} activeClass = {classes.active} deactiveClass = {classes.deactive}/>
+            <div className = {`${classes['modal-container']} ${classes.deactive}`} id="modal">
+                <div className={classes.modal}>
+                    <h1 className={classes['modal__title']} id="modal-title"></h1>
+                    <button className={classes['modal__btn']} onClick={() => {closeModal()}}>Okay &rarr;</button>
+                </div>
+                <div className={classes.overlay}></div>
+            </div>
         </div>
     );
 }
