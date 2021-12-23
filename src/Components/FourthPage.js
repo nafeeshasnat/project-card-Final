@@ -3,10 +3,12 @@ import { useState , useEffect } from 'react';
 import Slider from './Slider';
 import { db } from '../config';
 import { collection, getDocs, updateDoc, doc } from 'firebase/firestore';
+import Realistic from './Confetti';
 
 function FourthPage(){
     
     const [guests, setGuest] = useState([]);
+    const [isActive, setActive] = useState("false");
     const guestCollectionRef = collection(db , 'guests')
 
     useEffect(() => {
@@ -19,6 +21,7 @@ function FourthPage(){
 
     var attend
     var guestData;
+    var modalText;
     guests.forEach((guest) => {
         if(window.location.href.indexOf(guest.url) > -1){
             attend = (guest.attend);
@@ -32,13 +35,33 @@ function FourthPage(){
             const number = {attend: attending};
             await updateDoc(guestDoc, number);
             attend = attending;
+            if(attend === 1){
+                modalText = 'See you there';
+                document.getElementById('fire1').click();
+                document.getElementById('fire2').click();
+            }else if(attend === 0){
+                modalText = 'Please at least try';
+            }
             console.log('success');
         }else if(attend === 1){
+            modalText = 'You have already accepted the invitation';
+            document.getElementById('fire1').click();
+            document.getElementById('fire2').click();
             console.log('You have already confirmed as attending');
         }else if(attend === 0){
+            modalText = 'You have already declined the invitation';
             console.log('You have already confirmed as not attending');
         }
         console.log(attend);
+        document.getElementById('modal').classList.toggle(classes.deactive);
+        document.getElementById('modal').classList.toggle(classes.active);
+        document.getElementById('modal-title').innerHTML = modalText;
+        setActive(isActive);
+    }
+
+    const closeModal = () => {
+        document.getElementById('modal').classList.toggle(classes.active);
+        document.getElementById('modal').classList.toggle(classes.deactive);
     }
 
 
@@ -58,6 +81,14 @@ function FourthPage(){
                     </div>
                 </div>
             </div>
+            <div className = {`${classes['modal-container']} ${classes.deactive}`} id="modal">
+                <div className={classes.modal}>
+                    <h1 className={classes['modal__title']} id="modal-title"></h1>
+                    <button className={classes['modal__btn']} onClick={() => {closeModal()}}>Okay &rarr;</button>
+                </div>
+                <div className={classes.overlay}></div>
+            </div>
+            <Realistic/>
         </div>
     )
 }
