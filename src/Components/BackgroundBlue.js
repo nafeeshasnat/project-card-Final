@@ -1,5 +1,4 @@
 import { useState , useEffect } from 'react';
-import { Sugar } from 'react-preloaders2';
 import Card from './Card';
 import FireworksBackground from './FireworksBackground';
 import classes from './BackgroundBlue.module.css';
