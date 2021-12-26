@@ -1,0 +1,20 @@
+.not-invited{
+    font-family: 'Caveat', cursive;
+    font-size: 35px;
+    color: #e7cfab;
+    padding: 20px;
+}
+
+@media screen and (max-width: 350px) {
+    .not-invited{
+        margin-top: -120px;
+    }
+    .not-invited h2{
+        font-size: 1.1em;
+    }
+
+    .not-invited h3{
+        font-size: 1em;
+
+    }
+}

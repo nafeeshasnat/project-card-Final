@@ -29,3 +29,9 @@
     border-radius: 5px;
     font-size: 25px;
 }
+
+@media screen and (max-width: 400px) {
+    .alice-carousel__stage-item *{
+        padding: 0;
+    }
+}

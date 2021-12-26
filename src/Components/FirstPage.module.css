@@ -120,6 +120,7 @@
 @media screen and (max-width: 767px){
     .first-page{
         width: 100%;
+        padding: 50px 20px 100px 20px;
     }
 
     .first-page .arabic-text{

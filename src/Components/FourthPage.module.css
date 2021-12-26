@@ -92,3 +92,13 @@
         transform: scale(0.9);
     }
 }
+
+@media (max-width: 370px) and (max-height: 850px) {
+    .fourth{
+        padding: 70px 0 150px 0;
+    }
+
+    .fourth .join h3{
+        font-size: 2.5em;
+    }
+}

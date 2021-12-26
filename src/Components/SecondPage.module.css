@@ -94,6 +94,10 @@
 }
 
 @media screen and (max-width: 767px){
+    .info {
+        margin-top: 40px;
+    }
+
     .info .info-cards{
         flex-direction: column;
         margin-bottom: 40px;
@@ -127,5 +131,6 @@
 @media screen and (max-width: 1400px) and (min-width:1050px){
     .info{
         transform: scale(0.9);
+        margin-top: 0;
     }
 }

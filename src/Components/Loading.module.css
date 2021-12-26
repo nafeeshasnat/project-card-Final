@@ -1,0 +1,171 @@
+.loading{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: url('../Images/background.png');
+    opacity: 0;
+    transform: scale(0);
+    animation: loading 2.3s ease-in-out;
+    z-index: 99;
+    top: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.loading img{
+    position: absolute;
+}
+
+.loading .ring-1{
+    top: 50%;
+    left: 47%;
+    animation: ring1 2s ease-in-out;
+    transform: translate(-50%, -50%) rotate(-45deg) scale(1.1);
+}
+
+.loading .ring-2{
+    top: 50%;
+    left: 53%;
+    animation: ring2 2s ease-in-out;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+@keyframes ring1{
+    0%{
+        left: 0%;
+        transform: translate(-50%, -50%) rotate(0deg) scale(1.1);
+    }
+
+    100%{
+        transform: translate(-50%, -50%) rotate(-45deg) scale(1.1);
+        left: 47%;
+    }
+}
+
+@keyframes ring2{
+    0%{
+        left: 100%;
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    90%{
+        transform: translate(-50%, -50%) rotate(45deg);
+        left: 53%;
+    }
+}
+
+@keyframes loading {
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    90%{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    99%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    
+    100%{
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .loading .ring-1{
+        left: 49%;
+        animation: ring1 2s ease-in-out;
+    }
+
+    @keyframes ring1{
+        0%{
+            left: 0%;
+            transform: translate(-50%, -50%) rotate(0deg) scale(1.1);
+        }
+    
+        100%{
+            transform: translate(-50%, -50%) rotate(-45deg) scale(1.1);
+            left: 49%;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .loading .ring-1{
+        left: 44%;
+        animation: ring1 2s ease-in-out;
+    }
+
+    @keyframes ring1{
+        0%{
+            left: 0%;
+            transform: translate(-50%, -50%) rotate(0deg) scale(1.1);
+        }
+    
+        100%{
+            transform: translate(-50%, -50%) rotate(-45deg) scale(1.1);
+            left: 44%;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .loading .ring-1{
+        left: 40%;
+        animation: ring1 2s ease-in-out;
+    }
+
+    @keyframes ring1{
+        0%{
+            left: 0%;
+            transform: translate(-50%, -50%) rotate(0deg) scale(1.1);
+        }
+    
+        100%{
+            transform: translate(-50%, -50%) rotate(-45deg) scale(1.1);
+            left: 40%;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .loading .ring-1{
+        left: 36%;
+        animation: ring1 2s ease-in-out;
+        transform: translate(-50%, -50%) rotate(-45deg) scale(0.9);
+    }
+
+    .loading .ring-2{
+        transform: translate(-50%, -50%) rotate(45deg) scale(0.8);
+    }
+
+    @keyframes ring1{
+        0%{
+            left: 0%;
+            transform: translate(-50%, -50%) rotate(0deg) scale(0.9);
+        }
+    
+        100%{
+            transform: translate(-50%, -50%) rotate(-45deg) scale(0.9);
+            left: 36%;
+        }
+    }
+
+    @keyframes ring2{
+        0%{
+            left: 100%;
+            transform: translate(-50%, -50%) rotate(0deg) scale(0.8);
+        }
+    
+        90%{
+            transform: translate(-50%, -50%) rotate(45deg) scale(0.8);
+            left: 53%;
+        }
+    }
+}

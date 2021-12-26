@@ -51,14 +51,11 @@ function FourthPage(props){
             modalText = 'You have already declined the invitation';
             console.log('You have already confirmed as not attending');
         }
-        console.log(attend);
         document.getElementById('modal').classList.toggle(props.classProps.deactiveClass);
         document.getElementById('modal').classList.toggle(props.classProps.activeClass);
         document.getElementById('modal-title').innerHTML = modalText;
         setActive(isActive);
     }
-
-    console.log(props.classProps.deactiveClass)
 
     return(
         <div className={classes.fourth}>

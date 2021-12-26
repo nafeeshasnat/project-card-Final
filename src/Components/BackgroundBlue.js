@@ -1,4 +1,5 @@
 import { useState , useEffect } from 'react';
+import { Sugar } from 'react-preloaders2';
 import Card from './Card';
 import FireworksBackground from './FireworksBackground';
 import classes from './BackgroundBlue.module.css';
@@ -71,7 +72,7 @@ function BackgroundBlue(){
                     <h1 className={classes['modal__title']} id="modal-title"></h1>
                     <button className={classes['modal__btn']} onClick={() => {closeModal()}}>Okay &rarr;</button>
                 </div>
-                <div className={classes.overlay}></div>
+                <div className={classes.overlay} onClick={() => {closeModal()}}></div>
             </div>
         </div>
     );

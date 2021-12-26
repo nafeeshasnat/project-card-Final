@@ -100,7 +100,8 @@ img {
 }
 
 .modal__title {
-    font-size: 3.2rem;
+    font-size: 2.5rem;
+    line-height: 1.5;
 }
 
 .modal__btn {
@@ -108,13 +109,11 @@ img {
     padding: 1rem 1.6rem;
     border: 1px solid hsla(0, 0%, 100%, .2);
     border-radius: 100rem;
-
     color: inherit;
     background: transparent;
     font-size: 1.4rem;
     font-family: inherit;
     letter-spacing: .2rem;
-
     transition: .2s;
     cursor: pointer;
 }
@@ -190,13 +189,31 @@ img {
     }
     
     .background .bottom-right-flower{
-        bottom: -5%;
+        bottom: -3%;
         right: -5%;
     }
 
     .background .bottom-left{
-        bottom: -8%;
+        bottom: -5%;
         left: -20%;
+    }
+
+    .modal__title{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .modal__title{
+        font-size: 1.2em;
+    }
+
+    .modal{
+        padding: 2.5em 1em;
+    }
+
+    .modal__btn{
+        font-size: 1.2em;
     }
 }
 
