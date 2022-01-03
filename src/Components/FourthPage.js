@@ -35,7 +35,7 @@ function FourthPage(props){
             await updateDoc(guestDoc, number);
             attend = attending;
             if(attend === 1){
-                modalText = 'See you there';
+                modalText = 'Thank you, see you there';
                 document.getElementById('fire1').click();
                 document.getElementById('fire2').click();
             }else if(attend === 0){
@@ -66,7 +66,7 @@ function FourthPage(props){
 
             <div className={classes.join}>
                 <div className={classes.buttons}>
-                    <h3>Will you join us?</h3>
+                    <h3>We would be grateful if you could<br></br> join us in this holy occation.<br></br>Please confirm :</h3>
                     <div className={classes['button-div']}>
                         <button onClick={() => {guestAttend(1)}}>Yes</button>
                         <button onClick={() => {guestAttend(0)}}>No</button>

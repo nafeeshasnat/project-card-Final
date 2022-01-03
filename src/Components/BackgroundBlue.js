@@ -27,6 +27,7 @@ import Realistic from './Confetti';
 var name;
 var attend;
 let found;
+var family;
 
 function BackgroundBlue(){
     const [guests, setGuest] = useState([]);
@@ -46,6 +47,8 @@ function BackgroundBlue(){
             found = 1;
             name = (guest.name);
             attend = (guest.attend);
+            family = (guest.family);
+            console.log(family);
         }else if(found !== 1){
             found = 0;
         }
@@ -65,7 +68,7 @@ function BackgroundBlue(){
             <img src={bottomLeftFlower} className={`${classes['bottom-left']} ${classes['under-flower']}`} alt="bottom-left"></img>
             <FireworksBackground/>
             <Realistic/>
-            <Card guestFound={found} guestName = {name} guestConfirm = {attend} activeClass = {classes.active} deactiveClass = {classes.deactive}/>
+            <Card guestFound={found} guestName = {name} guestConfirm = {attend} guestFamily = {family} activeClass = {classes.active} deactiveClass = {classes.deactive}/>
             <div className = {`${classes['modal-container']} ${classes.deactive}`} id="modal">
                 <div className={classes.modal}>
                     <h1 className={classes['modal__title']} id="modal-title"></h1>

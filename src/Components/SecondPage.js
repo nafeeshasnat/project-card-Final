@@ -34,7 +34,7 @@ function SecondPage(){
                         <p>Daughter Of</p>
                         <h2>Abdullah Al Mahmood</h2>
                         <span>&amp;</span>
-                        <h2>Place Holder</h2>
+                        <h2>Kamrunnahar Abbasi Salma</h2>
                     </div>
                 </div>
             </div>

@@ -71,6 +71,26 @@
     }
 }
 
+@media screen and (max-width: 1400px){
+    .card{
+        width: 85vw;
+        min-height: 83vh;
+        height: auto;
+        margin: 5% 0;
+        z-index: 1;
+        background-image: none;
+        position: relative;
+    }
+
+    .card .prev{
+        left: -7%;
+    }
+
+    .card .next{
+        right: -7%;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .card{
         width: 85vw;

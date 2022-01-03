@@ -153,3 +153,15 @@
         max-width: 70px;
     }
 }
+
+@media screen and (max-width: 410px){
+    .first-page .details .salam h2{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .first-page .details .salam h2{
+        font-size: 25px;
+    }
+}

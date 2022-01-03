@@ -5,6 +5,8 @@ import HeartLogo from '../Images/heart-logo.png';
 
 function FirstPage(props){
     var name = props.guests.guestName;
+    var family = props.guests.guestFamily;
+    console.log(props.guests)
     return(
         <div className={classes['first-page']}>
             <div className={classes['arabic-div']}>
@@ -22,7 +24,7 @@ function FirstPage(props){
                     <h2>( As-Salamu Alaykum )</h2>
                 </div>
                 <h3 className={classes['guest-name']}>{name}</h3>
-                <h4>You are cordially invited with family on the joyful occasion of the marriage of</h4>
+                <h4>You are cordially invited {family === 1 && 'with family'} on the joyful occasion of the marriage of</h4>
                 <h2 className={classes['bride-groom']}>Rafin &amp; Mahrin</h2>
                 <p>We whole heartedly hope that you can join us in this blissful celebration.</p>
                 <div className={classes['right-text']}>
