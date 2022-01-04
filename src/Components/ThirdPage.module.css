@@ -4,6 +4,11 @@
     margin-top: -50px;
 }
 
+.vanue > h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+}
+
 .vanue .map{
     width: 80%;
     display: flex;
@@ -101,7 +106,7 @@
 
 @media screen and (max-width: 1400px){
     .vanue{
-        padding: 5% 0;
+        padding: 3% 0;
         margin: 0;
     }
 }

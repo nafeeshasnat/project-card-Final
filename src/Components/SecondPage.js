@@ -2,6 +2,8 @@ import classes from './SecondPage.module.css';
 import GroomImg from '../Images/groom.png';
 import BrideImg from '../Images/bride.png';
 import HeartLogo from '../Images/heart-logo.png';
+import Pagri from '../Images/pagri.jpg';
+import Dupatta from '../Images/Dupatta.jpg';
 
 function SecondPage(){
     return(
@@ -11,7 +13,7 @@ function SecondPage(){
                 <div className={classes['info-card']}>
                     <div className={classes['img-container']}>
                         <h2>Groom</h2>
-                        <img src={GroomImg} alt="Groom"></img>
+                        <img src={Pagri} alt="Groom"></img>
                     </div>
                     <div className={classes['personal-info']}>
                         <h2>Nafees Hasnat</h2>
@@ -27,7 +29,7 @@ function SecondPage(){
                 <div className={classes['info-card']}>
                     <div className={classes['img-container']}>
                         <h2>Bride</h2>
-                        <img src={BrideImg} alt="Bride"></img>
+                        <img src={Dupatta} alt="Bride"></img>
                     </div>
                     <div className={classes['personal-info']}>
                         <h2>Moontaha Mahmood</h2>

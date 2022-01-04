@@ -16,6 +16,7 @@
 
 .item {
     position: relative;
+    height: 230px;
 }
 
 .item p{

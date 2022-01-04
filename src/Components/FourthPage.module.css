@@ -9,6 +9,7 @@
 .fourth h2{
     font-size: 2em;
     color: #fff;
+    font-family: 'Dancing Script', cursive;
 }
 
 .fourth .slider{
@@ -74,22 +75,25 @@
     background: #ffe9e9;
     transform: translate(0, 0.25em);
 }
+
 .fourth .join button:hover::before {
     box-shadow: 0 0 0 2px #b18597, 0 0.5em 9px 0 #ffe3e2;
     transform: translate3d(0, 0.5em, -1em);
 }
+
 .fourth .join button:active {
     background: #ffe9e9;
     transform: translate(0em, 0.75em);
 }
+
 .fourth .join button:active::before {
     box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
     transform: translate3d(0, 0, -1em);
 }
 
-@media screen and (max-width: 1400px) and (min-width:1050px){
+@media screen and (max-width: 1400px){
     .fourth{
-        transform: scale(0.9);
+        padding: 40px 0 90px 0;
     }
 }
 
