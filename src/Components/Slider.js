@@ -1,12 +1,15 @@
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import './Slider.css';
-import slideImg1 from '../Images/groom.png';
 import Shayan from '../Images/polapan/Shayan.jpeg';
 import Momo from '../Images/polapan/momo.jpg';
 import Soha from '../Images/polapan/sohaCompressed.jpg';
 import Sparsha from '../Images/polapan/sparshaCompressed.jpg';
 import Ifti from '../Images/polapan/iftiCompressed.jpg';
+import Tomo from '../Images/polapan/tomo.jpg';
+import Mahi from '../Images/polapan/mahi.jpg';
+import Shihab from '../Images/polapan/shihab.jpg';
+import Rahma from '../Images/polapan/rahma.jpg';
 
 const responsive = {
     0: { items: 1 },
@@ -20,11 +23,15 @@ const items = [
     <div className="item" data-value="3"><img src={Soha} alt="slider Image"></img><p>Soha</p></div>,
     <div className="item" data-value="4"><img src={Sparsha} alt="slider Image"></img><p>Sparsha</p></div>,
     <div className="item" data-value="5"><img src={Ifti} alt="slider Image"></img><p>Ifti</p></div>,
+    <div className="item" data-value="6"><img src={Tomo} alt="slider Image"></img><p>Tomo</p></div>,
+    <div className="item" data-value="7"><img src={Mahi} alt="slider Image"></img><p>Mahi</p></div>,
+    <div className="item" data-value="8"><img src={Shihab} alt="slider Image"></img><p>Shihab</p></div>,
+    <div className="item" data-value="9"><img src={Rahma} alt="slider Image"></img><p>Rahma</p></div>,
 ];
 
 const Slider = () => (
     <AliceCarousel
-        mouseTracking
+        mouseTracking = "true"
         items={items}
         responsive={responsive}
         controlsStrategy="alternate"
@@ -32,6 +39,8 @@ const Slider = () => (
         autoPlayInterval = "3000"
         autoWidth="100%"
         infinite="true"
+        controlsStrategy = "responsive"
+        disableDotsControls = "true"
     />
 );
 

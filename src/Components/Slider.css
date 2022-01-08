@@ -9,9 +9,26 @@
     margin: 10px 3px 5px;
 }
 
-.alice-carousel__prev-btn, 
-.alice-carousel__next-btn{
-    display: none;
+.alice-carousel__prev-btn-item, 
+.alice-carousel__next-btn-item{
+    font-size: 40px;
+    font-weight: bold;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 5px 15px;
+}
+
+.alice-carousel__prev-btn-item:hover, 
+.alice-carousel__next-btn-item:hover{
+    color: burlywood;
+}
+
+.alice-carousel__prev-btn{
+    
+}
+
+.alice-carousel{
+    width: 80%;
 }
 
 .item {
@@ -34,5 +51,10 @@
 @media screen and (max-width: 400px) {
     .alice-carousel__stage-item *{
         padding: 0;
+    }
+
+    .item p{
+        right: 0;
+        width: 100%;
     }
 }

@@ -1,0 +1,28 @@
+table{
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table > tr:first-child{
+  background-color: burlywood;
+  color: #000;
+}
+
+table > tbody:nth-child(odd){
+  background-color: rgba(245,245,245);
+  /* border: 1px solid rgba(245,245,245); */
+}
+
+table > tbody:nth-child(even){
+  background-color: powderblue;
+  /* border: 1px solid powderblue; */
+}
+table > tbody:hover{
+  border: 1px solid gray;
+}
+table th,
+table td{
+  padding: 0.5em 0em;
+}
