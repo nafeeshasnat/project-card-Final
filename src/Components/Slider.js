@@ -10,6 +10,12 @@ import Tomo from '../Images/polapan/tomo.jpg';
 import Mahi from '../Images/polapan/mahi.jpg';
 import Shihab from '../Images/polapan/shihab.jpg';
 import Rahma from '../Images/polapan/rahma.jpg';
+import Dina from '../Images/polapan/dina.jpg';
+import Hasan from '../Images/polapan/hasan.jpg';
+import Raiyyan from '../Images/polapan/raiyyan.jpg';
+import Tansa from '../Images/polapan/tansa.jpg';
+import Hafsa from '../Images/polapan/hafsa.jpg';
+import Samiha from '../Images/polapan/samiha.jpg';
 
 const responsive = {
     0: { items: 1 },
@@ -27,6 +33,12 @@ const items = [
     <div className="item" data-value="7"><img src={Mahi} alt="slider Image"></img><p>Mahi</p></div>,
     <div className="item" data-value="8"><img src={Shihab} alt="slider Image"></img><p>Shihab</p></div>,
     <div className="item" data-value="9"><img src={Rahma} alt="slider Image"></img><p>Rahma</p></div>,
+    <div className="item" data-value="10"><img src={Dina} alt="slider Image"></img><p>Dina</p></div>,
+    <div className="item" data-value="11"><img src={Hasan} alt="slider Image"></img><p>Hasan</p></div>,
+    <div className="item" data-value="12"><img src={Raiyyan} alt="slider Image"></img><p>Raiyyan</p></div>,
+    <div className="item" data-value="13"><img src={Tansa} alt="slider Image"></img><p>Tansa</p></div>,
+    <div className="item" data-value="14"><img src={Hafsa} alt="slider Image"></img><p>Hafsa</p></div>,
+    <div className="item" data-value="15"><img src={Samiha} alt="slider Image"></img><p>Samiha</p></div>
 ];
 
 const Slider = () => (

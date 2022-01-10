@@ -32,9 +32,19 @@
     margin-top: 10px;
     padding-top: 10px;
     color: #d78f23;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     width: 100%;
+    margin-bottom: 0;
+}
+
+.vanue .map h4 a{
+    color: #e5e5e5;
+    text-decoration: none;
+}
+
+.vanue .map h4 a:hover{
+    color: #e7cfab;
 }
 
 .vanue .time-polapan{
