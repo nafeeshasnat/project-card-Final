@@ -24,14 +24,14 @@ function GuestChecklist(){
 
     guests.forEach((guest) => {
         if(guest.attend === 1 && alreadyInAttending.includes(guest.name) === false){
-            var td = '<tr><td>'+guest.name+'</td><td>Yes</td></tr>';
+            var td = '<tr><td>'+guest.name+'</td><td>'+ guest.id +'</td><td>Yes</td></tr>';
             alreadyInAttending.push(guest.name);
             document.querySelector('#table-attending tr').insertAdjacentHTML('afterend', td)
             countAttend++;
         }
 
         if(guest.attend === 0 && alreadyInNotAttending.includes(guest.name) === false){
-            var td = '<tr><td>'+guest.name+'</td><td>No</td></tr>';
+            var td = '<tr><td>'+guest.name+'</td><td>'+ guest.id +'</td><td>No</td></tr>';
             alreadyInNotAttending.push(guest.name);
             document.querySelector('#table-notattending tr').insertAdjacentHTML('afterend', td)
             countNotAttend++;
@@ -39,7 +39,7 @@ function GuestChecklist(){
 
 
         if(guest.attend === -1 && notComfirmed.includes(guest.name) === false){
-            var td = '<tr><td>'+guest.name+'</td><td>Pending</td></tr>';
+            var td = '<tr><td>'+guest.name+'</td><td>'+ guest.id +'</td><td>Pending</td></tr>';
             notComfirmed.push(guest.name);
             document.querySelector('#table-pending tr').insertAdjacentHTML('afterend', td)
             pending++;
@@ -58,6 +58,7 @@ function GuestChecklist(){
             <table id="table-attending">
                 <tr>
                     <th>Name</th>
+                    <th>Id</th>
                     <th>Attending</th>
                 </tr>
             </table>
@@ -65,6 +66,7 @@ function GuestChecklist(){
             <table id="table-notattending">
                 <tr>
                     <th>Name</th>
+                    <th>Id</th>
                     <th>Attending</th>
                 </tr>
             </table>
@@ -72,6 +74,7 @@ function GuestChecklist(){
             <table id="table-pending">
                 <tr>
                     <th>Name</th>
+                    <th>Id</th>
                     <th>Attending</th>
                 </tr>
             </table>
