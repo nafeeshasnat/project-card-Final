@@ -15,7 +15,7 @@ import Hasan from '../Images/polapan/hasan.jpg';
 import Raiyyan from '../Images/polapan/raiyyan.jpg';
 import Tansa from '../Images/polapan/tansa.jpg';
 import Hafsa from '../Images/polapan/hafsa.jpg';
-import Sayma from '../Images/polapan/sayma.jpg';
+// import Sayma from '../Images/polapan/sayma.jpg';
 import Samiha from '../Images/polapan/samiha.jpg';
 
 const responsive = {
@@ -39,8 +39,8 @@ const items = [
     <div className="item" data-value="12"><img src={Hasan} alt="slider Image"></img><p>Hasan</p></div>,
     <div className="item" data-value="13"><img src={Raiyyan} alt="slider Image"></img><p>Raiyyan</p></div>,
     <div className="item" data-value="14"><img src={Hafsa} alt="slider Image"></img><p>Hafsa</p></div>,
-    <div className="item" data-value="15"><img src={Sayma} alt="slider Image"></img><p>Sayma</p></div>,
-    <div className="item" data-value="16"><img src={Samiha} alt="slider Image"></img><p>Samiha</p></div>,
+//     <div className="item" data-value="15"><img src={Sayma} alt="slider Image"></img><p>Sayma</p></div>,
+    <div className="item" data-value="15"><img src={Samiha} alt="slider Image"></img><p>Samiha</p></div>,
 ];
 
 const Slider = () => (
