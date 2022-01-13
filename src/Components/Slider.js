@@ -40,7 +40,7 @@ const items = [
     <div className="item" data-value="13"><img src={Raiyyan} alt="slider Image"></img><p>Raiyyan</p></div>,
     <div className="item" data-value="14"><img src={Hafsa} alt="slider Image"></img><p>Hafsa</p></div>,
     <div className="item" data-value="15"><img src={Sayma} alt="slider Image"></img><p>Sayma</p></div>,
-    <div className="item" data-value="16"><img src={Samiha} alt="slider Image"></img><p>Samiha</p></div>
+    <div className="item" data-value="16"><img src={Samiha} alt="slider Image"></img><p>Samiha</p></div>,
 ];
 
 const Slider = () => (
