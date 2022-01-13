@@ -15,8 +15,8 @@ import Hasan from '../Images/polapan/hasan.jpg';
 import Raiyyan from '../Images/polapan/raiyyan.jpg';
 import Tansa from '../Images/polapan/tansa.jpg';
 import Hafsa from '../Images/polapan/hafsa.jpg';
-import Samiha from '../Images/polapan/samiha.jpg';
 import Sayma from '../Images/polapan/sayma.jpg';
+import Samiha from '../Images/polapan/samiha.jpg';
 
 const responsive = {
     0: { items: 1 },
