@@ -15,7 +15,7 @@
     "react-iframe": "^1.8.0",
     "react-responsive-carousel": "^3.2.22",
     "react-router-dom": "^6.2.1",
-    "react-scripts": "4.0.3",
+    "react-scripts": "5.0.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
